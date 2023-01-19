@@ -7,7 +7,7 @@ interface Sortable {
 }
 
 export class BetterSorter {
-  constructor(public collection: any) {} // TODO
+  constructor(public collection: Sortable) {} // TODO
 
   sort(): void {
     const { length } = this.collection;
