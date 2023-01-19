@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const BetterSorter_1 = require("./BetterSorter");
 const NumbersCollection_1 = require("./NumbersCollection");
+const CharactersCollection_1 = require("./CharactersCollection");
 class Sorter {
     // using unions is a bad idea, as usual, because
     // we have to keep adding if statements to fix
@@ -38,4 +39,7 @@ class Sorter {
 const numbersCollection = new NumbersCollection_1.NumbersCollection([10, 3, -5, 0]);
 const sorter = new BetterSorter_1.BetterSorter(numbersCollection);
 sorter.sort();
-console.log(numbersCollection.data);
+const charactersCollection = new CharactersCollection_1.CharactersCollection('Xaayb');
+const sortedChar = new BetterSorter_1.BetterSorter(charactersCollection);
+sortedChar.sort();
+console.log(numbersCollection.data, charactersCollection.data);

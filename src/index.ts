@@ -1,5 +1,6 @@
 import { BetterSorter } from './BetterSorter';
 import { NumbersCollection } from './NumbersCollection';
+import { CharactersCollection } from './CharactersCollection';
 class Sorter {
   // using unions is a bad idea, as usual, because
   // we have to keep adding if statements to fix
@@ -37,4 +38,7 @@ class Sorter {
 const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
 const sorter = new BetterSorter(numbersCollection);
 sorter.sort();
-console.log(numbersCollection.data);
+const charactersCollection = new CharactersCollection('Xaayb');
+const sortedChar = new BetterSorter(charactersCollection);
+sortedChar.sort();
+console.log(numbersCollection.data, charactersCollection.data);
