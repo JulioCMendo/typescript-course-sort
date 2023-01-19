@@ -37,11 +37,13 @@ class Sorter {
 
 // const sorter = new Sorter([10, 3, -5, 0]);
 const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
-const sorter = new BetterSorter(numbersCollection);
-sorter.sort();
+// const sorter = new BetterSorter(numbersCollection);
+// sorter.sort();
+numbersCollection.sort();
 const charactersCollection = new CharactersCollection('Xaayb');
-const sortedChar = new BetterSorter(charactersCollection);
-sortedChar.sort();
+// const sortedChar = new BetterSorter(charactersCollection);
+// sortedChar.sort();
+charactersCollection.sort();
 console.log(numbersCollection.data, charactersCollection.data);
 
 const linkedList = new LinkedList();
@@ -50,6 +52,7 @@ linkedList.add(-10);
 linkedList.add(-3);
 linkedList.add(4);
 
-const sortedList = new BetterSorter(linkedList);
-sortedList.sort();
+// const sortedList = new BetterSorter(linkedList);
+// sortedList.sort();
+linkedList.sort();
 linkedList.print();
